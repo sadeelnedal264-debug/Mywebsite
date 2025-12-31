@@ -41,6 +41,14 @@ text-decoration: none;
 border-radius: 5px;
 }
 success {
-colore: green;
+color: green;
 font-wight: blod;
+}
+.success{
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-wight: blod;
 }
