@@ -5,26 +5,7 @@
     <link rel="stylesheet" 
       href="style.css">
   </head>
-  <script>
-    const buttons =
-      document.querySelectorAll('.add-to-cart');
-    buttons.forEach(button >= {
-      button.addEventListener('click', ()
-        => {
-          const name =
-            button.getAttribute('data-name');
-          const price =
-            button.getAttribute('data-name');
-          let cart =
-            JSON.pase(localStoge.getItem('cart'))
-          || [];
-          cart.push({nam,price});
-          localStoge.getItem('cart',
-            JONS.stringify(cart));
-          alter(`${name}تم اضافته للسله`);
-        });
-    });
-  </script>
+  
   <body>
     <nav>
       <a href="index.html">Home</a>
@@ -131,6 +112,25 @@
       <button class="btn add-to-cart" data-nam="تاريخ موجزز للزمان" data-price="23JD">Add to cart</button>
     </div>
     </div>
-      
+        <script>
+    const buttons =
+      document.querySelectorAll('.add-to-cart');
+    buttons.forEach(button >= {
+      button.addEventListener('click', ()
+        => {
+          const name =
+            button.getAttribute('data-name');
+          const price =
+            button.getAttribute('data-name');
+          let cart =
+            JSON.pase(localStoge.getItem('cart'))
+          || [];
+          cart.push({nam,price});
+          localStoge.getItem('cart',
+            JONS.stringify(cart));
+          alter(`${name}تم اضافته للسله`);
+        });
+    });
+        </script>
   </body>
 </html>
