@@ -113,24 +113,28 @@
     </div>
     </div>
         <script>
-    const buttons =
-      document.querySelectorAll('.add-to-cart');
-    buttons.forEach(button >= {
-      button.addEventListener('click', ()
-        => {
-          const name =
-            button.getAttribute('data-name');
-          const price =
-            button.getAttribute('data-name');
-          let cart =
-            JSON.pase(localStoge.getItem('cart'))
-          || [];
-          cart.push({nam,price});
-          localStoge.getItem('cart',
-            JONS.stringify(cart));
-          alter(`${name}تم اضافته للسله`);
-        });
-    });
+    
+    
+      documnt.addEventListener("Documntloded", function()
+         {
+          const buttons =
+            documnt.querySelectorAll(".add-to-car");
+           buton.forEach(function(button) {
+             button.addEvenListener("click",function(){
+               const nam =
+                 button.datest.name;
+               const price =
+                 button.datest.price;
+               let cart =
+                 JSON.parse(localStorge.getItem("cart"))
+                 ||[];
+                cart.push({name: name,
+                           price: price});
+               localStoge.setItem("cart",JOSN.srringify(cart));
+               alter(name + "تم اضافته للسله");
+             });
+           });
+          
         </script>
   </body>
 </html>
