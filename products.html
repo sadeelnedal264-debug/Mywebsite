@@ -13,7 +13,7 @@
       <a href="cart.html">Cart</a>
     </nav>
     <h2>Availble Books</h2>
-    <div id="maaage" class="success"
+    <div id="message" class="success"
       style="display:none;"></div>
     <div class="products">
     <div class="products">
@@ -134,7 +134,9 @@
                let cart =
                  JSON.parse(localStorge.getItem("cart"))
                  ||[];
-                cart.push({name , price});
+                cart.push({name: name , 
+                          price: price
+                          });
                localStroge.setItem("cart",JOSN.stringify(cart));
               messageBox.textContant ="تمت إضافه"\" + name + "\"الى السله";
              messageBox.style.display =
