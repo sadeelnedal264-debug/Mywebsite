@@ -13,6 +13,8 @@
       <a href="cart.html">Cart</a>
     </nav>
     <h2>Availble Books</h2>
+    <div id="maaage" class="success"
+      style="display:none;"></div>
     <div class="products">
     <div class="products">
       <img
@@ -22,6 +24,7 @@
       <p>دان براون</p>
       <p class="price">price: 12JD</p>
       <button class="btn add-to-cart" data-nam="شيفره دافنشي" data-price="12JD">Add to cart</button>
+    </div>
     <div class="products">
       <img
         src="https:://share.gogle/images/vPJPM4M5wavnTza3b"
@@ -57,6 +60,7 @@
       <p>احمد خالد توفيق</p>
       <p class="price">price: 20JD</p>
       <button class="btn add-to-cart" data-nam="يوتوبيا" data-price="20JD">Add to cart</button>
+      </div>
     <div class="products">
       <img
         src="https:://share.gogle/images/ghACRbac9klb8fDaF"
@@ -119,8 +123,10 @@
          {
           const buttons =
             document.querySelectorAll(".add-to-car");
-           buttons.forEach(function (button) {
-             button.addEventListener("click",function(){
+           const messagebox =
+             document.getElementById("message");
+           buttons.forEach(button => {
+             button.addEventListener("click , () => {
                const name =
                  button.dataset.name;
                const price =
@@ -128,10 +134,15 @@
                let cart =
                  JSON.parse(localStorge.getItem("cart"))
                  ||[];
-                cart.push({name: name,
-                           price: price});
+                cart.push({name , price});
                localStroge.setItem("cart",JOSN.stringify(cart));
-               alert(name + "تم اضافته للسله");
+              messageBox.textContant ="تمت إضافه"\" + name + "\"الى السله";
+             messageBox.style.display =
+               "blck";
+             setTimeout(() => {
+               messageBox.style.disply
+                 ="none";
+             } ,2000);
              });
            });
          });
