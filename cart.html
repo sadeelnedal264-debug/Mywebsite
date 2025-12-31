@@ -12,8 +12,27 @@
         <a href="cart.html">Cart</a>
     </nav>
     <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p id="total"></p>
     <p>Books added to cart successfully.</p>
     <button class="btn">Checkout</button>
     <p class="success">Order replace successfully✔️</p>
   </body>
 </html>
+<script>
+  let cart =
+    JONS.parse(localStorge.getItem('cart'))
+  || [];
+  let cartDiv =
+    document.getElementById('cat-items');
+  let totalPrice = 0;
+  car.forEach(item => {
+    let div =
+      document.cartElement('div');
+    div.innrHTML =`${item.name} - Price: ${item.price} JD`;
+    cartDiv.appendChiled(div);
+    totalPrice +=
+      parseFloat(item.price);
+  });
+  document.getElementById('total').innerHTML = `Total: ${totalPrice} JD`;
+</script>
