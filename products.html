@@ -5,6 +5,26 @@
     <link rel="stylesheet" 
       href="style.css">
   </head>
+  <script>
+    const buttons =
+      document.querySelectorAll('.add-to-cart');
+    buttons.forEach(button >= {
+      button.addEventListener('click', ()
+        => {
+          const name =
+            button.getAttribute('data-name');
+          const price =
+            button.getAttribute('data-name');
+          let cart =
+            JSON.pase(localStoge.getItem('cart'))
+          || [];
+          cart.push({nam,price});
+          localStoge.getItem('cart',
+            JONS.stringify(cart));
+          alter('${name}تم اضافته للسله');
+        });
+    });
+  </script>
   <body>
     <nav>
       <a href="index.html">Home</a>
@@ -20,8 +40,7 @@
       <h3>شيفره دافنشي</h3>
       <p>دان براون</p>
       <p class="price">price: 12JD</p>
-      <a class="btn" href="cart.html">Add to cart</a>
-    </div>
+      <button class="btn add-to-cart" data-nam="شيفره دافنشي" data-price="12JD">Add to cart</button>
     <div class="products">
       <img
         src="https:://share.gogle/images/vPJPM4M5wavnTza3b"
@@ -29,7 +48,7 @@
       <h3>مائه عام من العزله</h3>
       <p>غابريل غارثيا ماركيز</p>
       <p class="price">price: 15JD</p>
-      <a class="btn" href="cart.html">Add to cart</a>
+      <button class="btn add-to-cart" data-nam="مائه عام من العزله" data-price="15JD">Add to cart</button>
     </div>
     <div class="products">
       <img
@@ -38,7 +57,7 @@
       <h3>فن اللامبالاه</h3>
       <p>مارك مانسون</p>
       <p class="price">price: 14JD</p>
-      <a class="btn" href="cart.html">Add to cart</a>
+      <button class="btn add-to-cart" data-nam="فن اللامبالاه" data-price="14JD">Add to cart</button>
     </div>
     <div class="products">
       <img
@@ -47,7 +66,7 @@
       <h3>ليطمئن قلبي</h3>
       <p>ادهم شرقاوي</p>
       <p class="price">price: 18JD</p>
-      <a class="btn" href="cart.html">Add to cart</a>
+      <button class="btn add-to-cart" data-nam="ليطمئن قلبي" data-price="18JD">Add to cart</button>
     </div>
     <div class="products">
       <img
@@ -56,8 +75,7 @@
       <h3>يوتوبيا</h3>
       <p>احمد خالد توفيق</p>
       <p class="price">price: 20JD</p>
-      <a class="btn" href="cart.html">Add to cart</a>
-    </div>
+      <button class="btn add-to-cart" data-nam="يوتوبيا" data-price="20JD">Add to cart</button>
     <div class="products">
       <img
         src="https:://share.gogle/images/ghACRbac9klb8fDaF"
@@ -65,7 +83,7 @@
       <h3>الفتاه التي تركتها</h3>
       <p>جوجو مويز</p>
       <p class="price">price: 22JD</p>
-      <a class="btn" href="cart.html">Add to cart</a>
+      <button class="btn add-to-cart" data-nam="الفتاه التي تركتها" data-price="22JD">Add to cart</button>
     </div>
     <div class="products">
       <img
@@ -74,7 +92,7 @@
       <h3>دقات الشامو</h3>
       <p>عمرو عبد الحميد</p>
       <p class="price">price: 17JD</p>
-      <a class="btn" href="cart.html">Add to cart</a>
+      <button class="btn add-to-cart" data-nam="دقات الشامو" data-price="17JD">Add to cart</button>
     </div>
     <div class="products">
       <img
@@ -83,7 +101,7 @@
       <h3>ثلاثيه غرناطه</h3>
       <p>رضوى عاشور</p>
       <p class="price">price: 25JD</p>
-      <a class="btn" href="cart.html">Add to cart</a>
+      <button class="btn add-to-cart" data-nam="ثلاثيه غرناطه" data-price="25JD">Add to cart</button>
     </div>
     <div class="products">
       <img
@@ -92,7 +110,7 @@
       <h3>غسق في منتصف الطريق</h3>
       <p>فدك ياسين</p>
       <p class="price">price: 16JD</p>
-      <a class="btn" href="cart.html">Add to cart</a>
+      <button class="btn add-to-cart" data-nam="غسق في منتصف الطريق" data-price="16JD">Add to cart</button>
     </div>
     <div class="products">
       <img
@@ -101,7 +119,7 @@
       <h3>فاتتني الصلاه</h3>
       <p>اسلام جمال</p>
       <p class="price">price: 25JD</p>
-      <a class="btn" href="cart.html">Add to cart</a>
+      <button class="btn add-to-cart" data-nam="فاتتني الصلاه" data-price="25JD">Add to cart</button>
     </div>
     <div class="products">
       <img
@@ -110,7 +128,7 @@
       <h3>تاريخ موجز للزمان</h3>
       <p>ستيفن هوكينج</p>
       <p class="price">price: 23JD</p>
-      <a class="btn" href="cart.html">Add to cart</a>
+      <button class="btn add-to-cart" data-nam="تاريخ موجزز للزمان" data-price="23JD">Add to cart</button>
     </div>
     </div>
       
