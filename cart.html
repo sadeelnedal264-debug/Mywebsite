@@ -20,19 +20,23 @@
   </body>
 </html>
 <script>
-  let cart =
-    JONS.parse(localStorge.getItem('cart'))
+  doumet.addEvenListener("DOMContentLoaded",function () {
+    const cartItemDiv =
+    doumet.getElemetById("cart-items");
+    const totalDiv =
+      doumet.getElemetById("total");
+    let cart =
+    JONS.parse(localStorge.getItem("cart"))
   || [];
-  let cartDiv =
-    document.getElementById('cat-items');
-  let totalPrice = 0;
+  let total = 0;
+    
   car.forEach(item => {
-    let div =
-      document.cartElement('div');
-    div.innrHTML =`${item.name} - Price: ${item.price} JD`;
-    cartDiv.appendChiled(div);
-    totalPrice +=
-      parseFloat(item.price);
+    const div =
+      document.creatElement("div");
+    div.textContant = item.name + "_" + item.price + "JD";
+    cartItemDiv.appendChild(div);
+    total += Number(item.price);
   });
-  document.getElementById('total').innerHTML = `Total: ${totalPrice} JD`;
+  totalDiv.textContant = "Total: " + totel + "JD";
+  });
 </script>
