@@ -115,26 +115,26 @@
         <script>
     
     
-      documnt.addEventListener("Documntloded", function()
+      document.addEventListener("DOMContentLoded", function()
          {
           const buttons =
-            documnt.querySelectorAll(".add-to-car");
-           buton.forEach(function(button) {
-             button.addEvenListener("click",function(){
-               const nam =
-                 button.datest.name;
+            document.querySelectorAll(".add-to-car");
+           buttons.forEach(function (button) {
+             button.addEventListener("click",function(){
+               const name =
+                 button.dataset.name;
                const price =
-                 button.datest.price;
+                 button.dataset.price;
                let cart =
                  JSON.parse(localStorge.getItem("cart"))
                  ||[];
                 cart.push({name: name,
                            price: price});
-               localStoge.setItem("cart",JOSN.srringify(cart));
-               alter(name + "تم اضافته للسله");
+               localStroge.setItem("cart",JOSN.stringify(cart));
+               alert(name + "تم اضافته للسله");
              });
            });
-          
+         });
         </script>
   </body>
 </html>
